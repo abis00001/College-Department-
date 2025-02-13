@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards - St. Joseph's College</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <style>
+        /* Custom Styles for the page */
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        header img.logo {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+        }
+
+        nav.navbar {
+            background-color: #333;
+        }
+
+        nav.navbar a.navbar-brand,
+        nav.navbar .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        nav.navbar a.navbar-brand:hover,
+        nav.navbar .navbar-nav .nav-link:hover {
+            color: #1abc9c;
+        }
+
+        .awards-section {
+            background-color: #f9f9f9;
+            padding: 40px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .awards-section h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .awards-section .award {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .award img.award-image {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .award img.award-image:hover {
+            transform: scale(1.05);
+        }
+
+        .award-description {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .award-description h3 {
+            color: #2c3e50;
+            font-size: 1.4rem;
+        }
+
+        .award-description p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="sjclogo.png" alt="St. Joseph's College Logo" class="logo">
+        <h1>St. Joseph's College (Autonomous) <br /> Tiruchirappalli - 620 002</h1>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Awards</a>
+                </li>
+                <!-- Add other navbar items if necessary -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="container mt-4">
+        <div class="awards-section">
+            <h2>Awards and Achievements</h2>
+            <p>Our Department has received numerous accolades and recognitions for its excellence in education and research. Below are some of the key awards and achievements we have earned:</p>
+
+            <!-- Award 1 -->
+            <div class="award">
+                <img src="award1.jpg" alt="Award 1" class="award-image">
+                <div class="award-description">
+                    <h3>Best Department Award</h3>
+                    <p>Our department was awarded the Best Department Award by the University for excellence in teaching and research.</p>
+                </div>
+            </div>
+
+            <!-- Award 2 -->
+            <div class="award">
+                <img src="award2.jpg" alt="Award 2" class="award-image">
+                <div class="award-description">
+                    <h3>Innovative Research Grant</h3>
+                    <p>We received a prestigious grant for innovative research in the field of Artificial Intelligence and Machine Learning.</p>
+                </div>
+            </div>
+
+            <!-- Award 3 -->
+            <div class="award">
+                <img src="award3.jpg" alt="Award 3" class="award-image">
+                <div class="award-description">
+                    <h3>National Recognition for Infrastructure</h3>
+                    <p>Our department's infrastructure has been nationally recognized as one of the best in the country for technical education.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 St. Joseph's College. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript and Bootstrap Bundle -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
