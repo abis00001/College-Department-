@@ -1,0 +1,781 @@
+<html lang="en">
+
+<head> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script><br>
+	<title>Department of Computer Science</title>
+    <style>
+        /* Global Reset */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		{
+    scroll-behavior: smooth;
+		}
+
+
+        /* Body and main layout */
+        body {
+            font-family: 'Arial', sans-serif;
+			background-image: url('imes.jpeg');
+			height: 100%;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #630202;
+			background-images:  url('images.jpeg');
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+		header h1{
+			color:#ffffff;
+			text-align: left;
+		}
+
+        header img.logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #f4f4f4;
+        }
+
+        /* Main section styles */
+        main {
+            padding: 80px 20px 20px; /* Adjusted for fixed header */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 2em;
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 1200px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-10px);
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        section img {
+            width: 10%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 1em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        li:hover {
+            font-weight: bold;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #630202;
+            color: white;
+            text-align: center;
+            padding: 1.5em;
+			
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+		.footer-widget-area {
+    padding: 20px 0;
+    background-color:  #630202;
+	height:200px;
+}
+
+.footer-logo img {
+    width: 300px;
+}
+
+.single-footer-widget h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 16px;
+	height:20px;
+}
+
+.single-footer-widget p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-list li a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+
+}
+
+.instagram-image .footer-img {
+    display: inline-block;
+    margin: 5px;
+}
+
+.instagram-image .footer-img img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.soclicon a {
+    margin-right: 10px;
+}
+
+.soclicon img {
+    transition: transform 0.3s ease;
+}
+
+.soclicon img:hover {
+    transform: scale(1.1);
+}
+
+.footer-area {
+    padding: 10px 0;
+    background-color:#E5B804;
+    color: #fff;
+}
+
+.footer-area .soclicon img {
+    width: 30px;
+}
+
+.footer-area .soclicon a {
+    margin: 0 5px;
+}
+
+footer span {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .single-footer-widget {
+        margin-bottom: 20px;
+    }
+
+    .instagram-image .footer-img {
+        margin-bottom: 10px;
+    }
+}
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            header img.logo {
+                margin-bottom: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            section {
+                padding: 1.5em;
+				
+            }
+        }
+		/* Add this to your existing CSS */
+
+/* Topper Section Scroll */
+.topper-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.topper-wrapper {
+    display: flex;
+    animation: scrollLeftRight 20s linear infinite;
+    white-space: nowrap; /* Ensures there are no gaps */
+}
+
+@keyframes scrollLeftRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Topper Profile */
+.topper-profile {
+    display: inline-flex; /* Align horizontally without gaps */
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px; /* Reduce margin for smaller size */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 300px; /* Adjust width for smaller size */
+    height: 200px; /* Adjust height for smaller size */
+    flex-shrink: 0; /* Prevent shrinking of profiles */
+}
+
+.topper-profile:hover {
+    transform: scale(1.05);
+}
+
+.topper-profile img {
+    width: 120px; /* Adjust size of profile images */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.topper-profile h3 {
+    margin: 0;
+    font-size: 14px; /* Adjust font size */
+    color: #333;
+}
+
+.topper-profile p {
+    margin-top: 5px;
+    font-size: 12px; /* Adjust font size */
+    color: #666;
+}
+
+/* Portrait View - Adjust layout for column style */
+@media (max-width: 768px) {
+    .topper-wrapper {
+        display: block; /* Stack profiles vertically on smaller screens */
+        text-align: center; /* Center content */
+    }
+
+    .topper-profile {
+        width: 100%; /* Take up full width in smaller view */
+        height: auto; /* Let height adjust based on content */
+        margin-bottom: 20px; /* Add some spacing between profiles */
+    }
+
+    .topper-profile img {
+        width: 80px; /* Adjust image size for smaller screens */
+        height: 80px;
+    }
+
+    .topper-profile h3 {
+        font-size: 16px; /* Adjust font size for readability */
+    }
+
+    .topper-profile p {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+}
+
+/* Landscape Mode for Small Devices */
+@media (max-width: 768px) and (orientation: landscape) {
+    .topper-wrapper {
+        display: flex; /* Keep horizontal layout for landscape */
+        flex-wrap: wrap; /* Allow profiles to wrap to next line if needed */
+        justify-content: center; /* Center items */
+    }
+
+    .topper-profile {
+        width: 120px; /* Ensure profiles have a set width in landscape */
+        height: 180px; /* Keep a fixed height in landscape */
+        margin: 0 10px; /* Add some horizontal spacing between profiles */
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="sjclogo.png" alt="St. Joseph's College Logo" class="logo">
+		<h1><b>St.Joseph's College(<span class="yellow-text">Autonomous</span>)</b><br/><b> Tiruchirappalli-   620 002</b></h1><br/>
+        <nav class="navbar navbar-expand-lg navbar-white bg-black">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		<a class="dropdown-item" href="introduction.html">Introduction to CS</a>
+          <a class="dropdown-item" href="#"></a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"></a>
+		  <a class="dropdown-item" href="infrastructure.html">infrastructure</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"></a>
+		  <a class="dropdown-item" href="staffs.html">Faculty</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"></a>
+		  <a class="dropdown-item" href="profileofthedepartment.html">Profile of the Department</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"></a>
+		  <a class="dropdown-item" href="awards.html">Awards</a>
+        </div>
+      </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Academic
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="alumni.html">alumni</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="book.html">Book Publication</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="research.html">Research Advisors</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="retired.html">Retired Faculty</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="program.html">Programme Specific Outcomes</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="studentsclub.html">Students Club</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="schollership.html">Scholership</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="counsellor.html">Projects</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="trainingandplacement.html">Training and Placement</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="enhancementscheme.html">Enhancement Scheme</a>
+        </div>
+		<li>
+		<div>
+          <a href="contactus.html">contactus</a>
+        </div>
+		</li>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+		<br></br><br><br>
+            <h1><b>Department of Computer Science</b></h1>
+           <center> <p>Special Heritage Status Awarded  by UGC <br>Accredited at A++ Grade(4th cycle)by NAAC<br> College with Potential for Excellence by UGC<br> DBT-STAR & DST-FIST Sponsored College<br>Joseph's College is an affiliated First Grade College of the Bharathidasan University.<br> It was established in 1844 by the Fathers of Society of Jesus (The Jesuits).<br> It was affiliated to the then Madras University in 1866.<br> The College celebrated its centenary in 1944 and sesquicentenary in 1995.</p></center>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2><b>About Us</b></h2>
+            <p>The Department of Computer Science at St. Joseph's College is committed to excellence in education and fostering innovation. Our courses equip students with essential skills to thrive in the competitive global market, backed by a strong focus on research and development.</p>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses">
+            <h2><b>Programmes Information</b></h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmes Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Established Year</th>
+        <th>Name of the Programme</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1983</td>
+        <td>B Sc Computer Science</td>
+      </tr>
+      <tr>
+        <td>1984</td>
+        <td>MCA Master of Computer Applications</td>
+      </tr>
+      <tr>
+        <td>2002</td>
+        <td>M Phil in Computer Science</td>
+      </tr>
+      <tr>
+        <td>2003</td>
+        <td>Ph.D in Computer Science</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+
+        </section>
+        </section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            text-align: center;
+        }
+        
+        .swiper {
+            width: 80%;
+            height: 400px;
+            margin: auto;
+        }
+        
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .text-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <h2>Achievements</h2>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <img src="ach1.jpg" alt="Achievement 1">
+                <div class="text-overlay">
+Our college boxer N.SUNIL VENKAT 2nd B.Sc computer science won the GOLD Medal in the 7th Youth National Games held at Ibndore in Bhopal from 16th to 21th September 2022</div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <img src="ach2.jpg" alt="Achievement 2">
+                <div class="text-overlay">
+Our college students won the Over all championship in BOOTFETE 2K22 conducted by Bishop Heber College (Autonomous), Tiruchirappalli.
+Debugging - First Prize - Abishek S (I MCA) & Honey Joe (I BSc Cs)
+Quiz - First Prize - Dhayanand S P (I BSc CS) & Abishek S (I MCA)</div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <img src="ach3.jpg" alt="Achievement 3">
+                <div class="text-overlay">
+Our college boxer N.SUNIL VENKAT 2nd B.Sc computer science won the GOLD Medal in the 7th Youth National Games held at Ibndore in Bhopal from 16th to 21th September 2022</div>
+            </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</section>
+</body>
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2><b>Get in Touch</b></h2>
+            <address>
+                <i class="fas fa-phone-alt"></i> 0431-2700320/4226436<br>
+				<i class="fas fa-envelope"></i>college@mail.sjctni.edu<br>
+				<i class="fas fa-globe"></i>www.sjctni.edu<br>
+				<i class="fas fa-map-marker-alt"></i>St.Joseph's College (Autonomous),<br>
+														Tiruchirappalli-620 002,<br>
+														Tamilnadu, India.
+            </address>
+            <p><i class="fas fa-phone-alt"></i><strong>Phone:</strong> 9994840041</p>
+            <p> <i class="fas fa-envelope"></i><strong>Email:</strong> abi347489@gmail.com</p>
+        </section>
+		<section class="topper-container">
+		<h2><b>Topper</b></h2>
+            <div class="topper-wrapper">
+                <!-- Profile 1 -->
+                <div class="topper-profile">
+                    <img src="abitop.jfif" alt="Topper 1">
+                    <h3>Abisheik Ruban C</h3>
+                    <p>B.Sc Computer Science</p>
+                </div>
+                <!-- Profile 2 -->
+                <div class="topper-profile">
+                    <img src="kirtop.jfif" alt="Topper 2">
+                    <h3>Kiruthick Roshan</h3>
+                    <p>B.Sc Computer Science</p>
+                </div>
+                <!-- Profile 3 -->
+                <div class="topper-profile">
+                    <img src="johtop.jfif" alt="Topper 3">
+                    <h3>John Kerry</h3>
+                    <p>B.Sc Computer Science</p>
+                </div>
+                <!-- Profile 4 -->
+                <div class="topper-profile">
+                    <img src="dintop.jfif" alt="Topper 4">
+                    <h3>Dinesh</h3>
+                    <p>B.Sc Computer Science</p>
+                </div>
+                <!-- Profile 5 -->
+                <div class="topper-profile">
+                    <img src="kevtop.jfif" alt="Topper 5">
+                    <h3>Kevin Lawseras</h3>
+                    <p>B.Sc Computer Science</p>
+                </div>
+                <!-- Profile 6 -->
+                <div class="topper-profile">
+                    <img src="madtop.jfif" alt="Topper 6">
+                    <h3>Madesh MS</h3>
+                    <p>B.Sc Computer Science</p>
+               
+		
+		
+    </main>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Text</title>
+    <style>
+        .running-text {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+            display: inline-block;
+            animation: scroll-left 15s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+<h2><b> Anouncement</b></h3>
+    <div class="running-text">
+        Today 09/03/2025 our department is going to conduct a seminor in behalfe of our hod i the toppic of frindship between studens and teacher at 12:00pm to 01:30pm
+    </div>
+</body>
+</html>
+
+    <footer>
+	<!-- Footer Widget Area -->
+<div class="footer-widget-area" style="border-top: 3px solid #fff;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-4">
+                <div class="single-footer-widget">
+                    <div class="footer-logo">
+                        <a>
+                            <img src="sjclogo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+                <div class="single-footer-widget">
+                    <h3>GET IN TOUCH</h3>
+                    <p><i class="fa fa-phone"></i> 0431-2700320 / 4226436</p>
+                    <p><i class="fa fa-envelope"></i> college@mail.sjctni.edu</p>
+                    <p><i class="fa fa-globe"></i> www.sjctni.edu</p>
+                    <p><i class="fa fa-map-marker"></i> St.Joseph's College (Autonomous), Tiruchirappalli-620 002, Tamilnadu, India</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 hidden-sm">
+                <div class="single-footer-widget">
+                    <h3>Useful Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="https://www.sjctni.edu/TeleDir/index.jsp?bredcom=Home%20|%20Campus%20Telephone%20Dir.">Campus Telephone Dir.</a></li>
+                        <li><a href="http://www.bdu.ac.in/index1.php" target="_">Bharathidasan University</a></li>
+                        <li><a href="https://www.ugc.ac.in/" target="_">UGC</a></li>
+                        <li><a href="http://www.naac.gov.in/" target="_">NAAC</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-4">
+                <div class="single-footer-widget">
+                    <h3>Instagram</h3>
+                    <div class="instagram-image">
+                        <div class="footer-img">                         
+                                <img src="insta1.jfif" alt="Instagram 1">
+                            </a>
+                        </div>
+						<div class="footer-img">                          
+                                <img src="insta2.jfif" alt="Instagram 1">
+                            </a>
+							</div>
+                        <div class="footer-img">                            
+                                <img src="insta3.jfif" alt="Instagram 2">
+                            </a>
+                        </div>
+						<div class="footer-img">                          
+                                <img src="insta4.jfif" alt="Instagram 2">
+                            </a>
+                        </div>
+						
+							
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Area Start -->
+<footer class="footer-area">
+    <div class="container">
+        <div class="row">
+           
+                </div>
+            </div>
+            
+                <center><span style="color: #3c0004; font-weight: bold;">Copyright © St. Joseph's College 2025.<br> All rights reserved.Created by JCICT-ERP TEAM</a></span></center>
+            </div>
+			
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
